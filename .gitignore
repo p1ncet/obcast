@@ -5,6 +5,7 @@ modules
 *.lo
 *.loT
 *.la
+*.mem
 Makefile
 Makefile.fragments
 Makefile.global
