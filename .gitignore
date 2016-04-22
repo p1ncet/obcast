@@ -1,32 +1,32 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
+.deps
+.libs
+build
+modules
 *.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
+*.loT
+*.la
+Makefile
+Makefile.fragments
+Makefile.global
+Makefile.objects
+acinclude.m4
+aclocal.m4
+config.cache
+config.guess
+config.h
+config.h.in
+config.log
+config.nice
+config.status
+config.sub
+configure
+configure.in
+install-sh
+libtool
+ltmain.sh
+missing
+mkinstalldirs
+run-tests.php
+test.ini
+tmp-php.ini
+autom4te.cache
