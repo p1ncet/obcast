@@ -13,13 +13,13 @@ ZEND_GET_MODULE(obcast)
 
 PHPAPI zend_class_entry *obcast_ce_Boolable;
 
-ZEND_BEGIN_ARG_INFO(arginfo_recursive_it_void, 0)
+ZEND_BEGIN_ARG_INFO(arginfo_boolable_it_void, 0)
 ZEND_END_ARG_INFO()
 
 static zend_object_handlers obcast_object_handlers;
 
 static const zend_function_entry obcast_funcs_Boolable[] = {
-	ZEND_ABSTRACT_ME(Boolable, __toBoolean, arginfo_recursive_it_void)
+	ZEND_ABSTRACT_ME(Boolable, __toBoolean, arginfo_boolable_it_void)
 	PHP_FE_END
 };
 
