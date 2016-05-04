@@ -31,3 +31,5 @@ run-tests.php
 test.ini
 tmp-php.ini
 autom4te.cache
+.idea/
+CMakeLists.txt
