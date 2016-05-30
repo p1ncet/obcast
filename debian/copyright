@@ -1,0 +1,6 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: obcast
+Source: https://github.com/p1ncet/obcast
+
+Files: *
+Copyright: 2016 p1ncet 
