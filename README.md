@@ -6,18 +6,20 @@ PHP7 only. It allows to cast an object to boolean by implementing new internal i
 ## Example
 
 ```php
-$obj = new class implements Boolable {
-    public $container = [];
+class Container Boolable {
+    public $data = [];
     public function __toBoolean() 
     {
-        return count($this->container) > 0;
+        return count($this->data) > 0;
     }
 };
+
+$obj = new Container();
 
 var_dump((bool) $obj);
 echo $obj ? "Not empty!\n" : "Empty!\n";
 
-$obj->container = [1];
+$obj->data = [1];
 
 var_dump((bool) $obj);
 echo $obj ? "Not Empty!\n" : "Empty!\n";
@@ -27,7 +29,7 @@ echo $obj ? "Not Empty!\n" : "Empty!\n";
 
 ```
 bool(false)
-Empty
+Empty!
 bool(true)
 Not empty!
 ```
