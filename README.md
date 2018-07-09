@@ -6,7 +6,7 @@ PHP7 only. It allows to cast an object to boolean by implementing new internal i
 ## Example
 
 ```php
-class Container Boolable {
+class Container implements Boolable {
     public $data = [];
     public function __toBoolean() 
     {
