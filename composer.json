@@ -3,13 +3,13 @@
   "description": "Casting objects to scalar values",
   "license": "MIT",
   "authors": [
-	  {
+    {
       "name": "Valery Pudul",
       "email": "valery.pudul@gmail.com"
     }
   ],
   "require": {
-	  "php": ">=7.1"
+    "php": ">=7.0"
   },
   "autoload": {
     "classmap": ["stubs.php"]
