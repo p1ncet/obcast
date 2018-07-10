@@ -4,21 +4,32 @@
 PHP7 only. It allows to cast an object to boolean by implementing new internal interface <i>Boolable</i>
 
 ## Example
-<pre>
-$obj = new class implements Boolable {
-		public $container = [];
-		public function __toBoolean() {
-			return count($this->container) > 0;
-		}
+
+```php
+class Container implements Boolable {
+    public $data = [];
+    public function __toBoolean() 
+    {
+        return count($this->data) > 0;
+    }
 };
 
-var_dump((bool) $obj);
+$obj = new Container();
 
-$obj->container = [1];
 var_dump((bool) $obj);
-</pre>
+echo $obj ? "Not empty!\n" : "Empty!\n";
+
+$obj->data = [1];
+
+var_dump((bool) $obj);
+echo $obj ? "Not Empty!\n" : "Empty!\n";
+```
+
 ### Output
-<pre>
+
+```
 bool(false)
+Empty!
 bool(true)
-</pre>
+Not empty!
+```
