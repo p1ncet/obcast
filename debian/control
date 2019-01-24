@@ -2,7 +2,7 @@ Source: obcast
 Section: web
 Priority: optional
 Maintainer: p1ncet <p1ncet@mail.ru>
-Build-Depends: debhelper (>= 8.0.0), php7-dev
+Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 Homepage: https://github.com/p1ncet/obcast
 
